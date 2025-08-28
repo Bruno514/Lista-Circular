@@ -17,12 +17,12 @@ class ListaCircular:
         representacao = ""
 
         if self.cabeca == None:
-            return "Vazia" 
+            return "" 
             
         atual = self.cabeca
         
         while atual.proximo != self.cabeca:
-            representacao += f"{atual.info}->"
+            representacao += f"{atual.info} -> "
 
             atual = atual.proximo
 
